@@ -1,0 +1,128 @@
+  /* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Tipografía y fondo */
+  .body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ece7e7;
+    color: #333;
+    margin: 20px;
+  }
+  
+  /* Encabezado */
+  .header {
+    background: #222;
+    color: #fff;
+    padding: 32px 0 16px 0;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    text-align: center;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .header__title {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+  }
+  .header__subtitle {
+    font-size: 1.1em;
+    color: #ccc;
+  }
+  
+  /* Main y secciones */
+  .main {
+    max-width: 800px;
+    margin: auto;
+    padding: 0 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .section {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    padding: 24px 20px;
+  }
+  
+  .section__title {
+    color: #333;
+    margin-bottom: 16px;
+    font-size: 1.3em;
+  }
+  
+  /* Flex para la sección Sobre mí */
+  .flex-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .about__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 1s;
+    border: 3px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+
+  .about__img:hover {
+    transform: scale(2);
+  }
+  
+  .about__text {
+    flex: 1;
+    font-size: 1.1em;
+  }
+  
+  /* Listas */
+  .list {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  .list--interests li,
+  .list--tasks li,
+  .list--contact li {
+    margin-bottom: 8px;
+    font-size: 1em;
+  }
+  
+  /* Pie de página */
+  .footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin-top: 32px;
+    font-size: 1em;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .main {
+      padding: 0 4px 24px 4px;
+      gap: 18px;
+    }
+    .section {
+      padding: 14px 6px;
+    }
+    .flex-row {
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .about__img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+  
